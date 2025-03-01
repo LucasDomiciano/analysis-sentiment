@@ -40,3 +40,10 @@ def predict_sentiment(text):
 # Testar com exemplos
 print(predict_sentiment("I love this product, it's amazing!"))
 print(predict_sentiment("This is terrible, I hate it."))
+
+# No final do sentiment.py
+while True:
+    user_input = input("Digite um texto (ou 'sair'): ")
+    if user_input.lower() == 'sair':
+        break
+    print(f"Sentimento: {predict_sentiment(user_input)}")
